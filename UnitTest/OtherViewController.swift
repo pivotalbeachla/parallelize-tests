@@ -1,7 +1,7 @@
 import UIKit
 
 class OtherViewController: UIViewController {
-    @IBAction func dismissWasPressed(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func dismissWasPressed(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
 }
