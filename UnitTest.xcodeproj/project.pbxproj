@@ -18,6 +18,7 @@
 		AE8BCCF81D9ED3AE001EA696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8BCCF71D9ED3AE001EA696 /* Assets.xcassets */; };
 		AE8BCCFB1D9ED3AE001EA696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8BCCF91D9ED3AE001EA696 /* LaunchScreen.storyboard */; };
 		AE8BCD061D9ED3AE001EA696 /* UnitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8BCD051D9ED3AE001EA696 /* UnitTestTests.swift */; };
+		AEBE9A2A1DA5B81F004C0F7D /* UnitTestSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE9A291DA5B81F004C0F7D /* UnitTestSplitTests.swift */; };
 		AEE1B9541D9EE3AA00EE2FCC /* UnitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1B9531D9EE3AA00EE2FCC /* UnitTestUITests.swift */; };
 		AEE1B95C1D9EE3C300EE2FCC /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1B95B1D9EE3C300EE2FCC /* OtherViewController.swift */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,7 @@
 		AE8BCD011D9ED3AE001EA696 /* UnitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8BCD051D9ED3AE001EA696 /* UnitTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestTests.swift; sourceTree = "<group>"; };
 		AE8BCD071D9ED3AE001EA696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEBE9A291DA5B81F004C0F7D /* UnitTestSplitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestSplitTests.swift; sourceTree = "<group>"; };
 		AEE1B9511D9EE3AA00EE2FCC /* UnitTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE1B9531D9EE3AA00EE2FCC /* UnitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestUITests.swift; sourceTree = "<group>"; };
 		AEE1B9551D9EE3AA00EE2FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		AE8BCCE41D9ED3AE001EA696 = {
 			isa = PBXGroup;
 			children = (
+				AEBE9A291DA5B81F004C0F7D /* UnitTestSplitTests.swift */,
 				AE8BCCEF1D9ED3AE001EA696 /* UnitTest */,
 				AE8BCD041D9ED3AE001EA696 /* UnitTestTests */,
 				AEE1B9521D9EE3AA00EE2FCC /* UnitTestUITests */,
@@ -380,6 +383,7 @@
 			files = (
 				AE4F78D31DA47CF100E76037 /* ExpectedToFailTests.swift in Sources */,
 				AE8BCD061D9ED3AE001EA696 /* UnitTestTests.swift in Sources */,
+				AEBE9A2A1DA5B81F004C0F7D /* UnitTestSplitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

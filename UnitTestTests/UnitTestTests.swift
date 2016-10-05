@@ -6,9 +6,4 @@ class UnitTestTests: XCTestCase {
         sleep(30)
         XCTAssertTrue(true)
     }
-    
-    func testFalse() {
-        sleep(30)
-        XCTAssertFalse(false)
-    }
 }
