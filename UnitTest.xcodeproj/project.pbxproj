@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE147C501DA3029A0080875D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE147C3B1DA301FC0080875D /* Quick.framework */; };
+		AE4F78D31DA47CF100E76037 /* ExpectedToFailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4F78D21DA47CF100E76037 /* ExpectedToFailTests.swift */; };
 		AE8A86B31DA304F600AC36CA /* QuickOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE147C471DA302480080875D /* QuickOneUITests.swift */; };
 		AE8A86B51DA305ED00AC36CA /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE147C3B1DA301FC0080875D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE8B4CC41DA315EC007C37A2 /* QuickTwoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8B4CC31DA315EC007C37A2 /* QuickTwoUITests.swift */; };
@@ -63,6 +64,7 @@
 		AE147C451DA302480080875D /* QuickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE147C471DA302480080875D /* QuickOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickOneUITests.swift; sourceTree = "<group>"; };
 		AE147C491DA302480080875D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4F78D21DA47CF100E76037 /* ExpectedToFailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpectedToFailTests.swift; sourceTree = "<group>"; };
 		AE8B4CC31DA315EC007C37A2 /* QuickTwoUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickTwoUITests.swift; sourceTree = "<group>"; };
 		AE8BCCED1D9ED3AE001EA696 /* UnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8BCCF01D9ED3AE001EA696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			children = (
 				AE8BCD051D9ED3AE001EA696 /* UnitTestTests.swift */,
 				AE8BCD071D9ED3AE001EA696 /* Info.plist */,
+				AE4F78D21DA47CF100E76037 /* ExpectedToFailTests.swift */,
 			);
 			path = UnitTestTests;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4F78D31DA47CF100E76037 /* ExpectedToFailTests.swift in Sources */,
 				AE8BCD061D9ED3AE001EA696 /* UnitTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
