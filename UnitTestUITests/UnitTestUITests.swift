@@ -27,6 +27,8 @@ class UnitTestUITests: XCTestCase {
         dismissButton.tap()
         presentButton.tap()
         dismissButton.tap()
+        
+        sleep(15)
     }
 
     func testTwo() {

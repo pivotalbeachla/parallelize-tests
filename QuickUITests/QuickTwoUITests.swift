@@ -25,6 +25,9 @@ class QuickTwoUITests: QuickSpec {
             dismissButton.tap()
             presentButton.tap()
             dismissButton.tap()
+            
+            sleep(60)
+            
             presentButton.tap()
             dismissButton.tap()
             presentButton.tap()
