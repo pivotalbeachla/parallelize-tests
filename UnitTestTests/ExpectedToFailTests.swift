@@ -2,8 +2,11 @@ import XCTest
 @testable import UnitTest
 
 class ExpectedToFailTests: XCTestCase {
-    func testFalse() {
+    func testTrue() {
         XCTAssertFalse(true)
-        sleep(30)
+    }
+
+    func testFalse() {
+        XCTAssertTrue(false)
     }
 }
