@@ -40,7 +40,6 @@ on %w{parallel-ios-testbox-1.local parallel-ios-testbox-2.local parallel-ios-tes
             test_run_result = capture(:xcodebuild, "-scheme UnitTest test-without-building -destination \"platform=iOS Simulator,name=iPhone 7\" -only-testing:#{nextTest}")
             tests_results << { name: nextTest, success: true, output: test_run_result }
           rescue Exception => e
-            failed = true
             tests_results << { name: nextTest, success: false, output: e.to_s }
           end
         end
@@ -49,12 +48,20 @@ on %w{parallel-ios-testbox-1.local parallel-ios-testbox-2.local parallel-ios-tes
   end
 end
 
+File.open("test_results.data",'w') {|f| f.write(Marshal.dump(tests_results)) }
+
 failing_tests = tests_results.inject([]) do |arr, result|
-  if !result[:success]
-    arr += result[:output][/Failing tests:\s+(.+)\n\*\*/].scan(/(-\[.+\])/).flatten
+  begin
+    if !result[:success]
+      failing = result[:output][/Failing tests:.+\n\*\*/m].scan(/(-\[.+\])/)
+      arr << failing if failing
+    end
+    arr
+  rescue NoMethodError => error
+    File.open("failing_error.data", 'w') {|f| f.write(Marshal.dump(result)) }
   end
 end
 
 unless failing_tests.empty?
-  puts "\nFailing tests:\n#{failing_tests.join("\n")}"
+  puts "\nFailing tests:\n\t#{failing_tests.join("\n\t")}\n** TEST FAILED **"
 end
