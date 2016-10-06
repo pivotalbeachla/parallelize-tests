@@ -58,6 +58,7 @@ failing_tests = tests_results.inject([]) do |arr, result|
     end
     arr
   rescue NoMethodError => error
+    puts "Error parsing test failure #{error.to_s}"
     File.open("failing_error.data", 'w') {|f| f.write(Marshal.dump(result)) }
   end
 end
