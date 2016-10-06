@@ -37,6 +37,7 @@ on %w{parallel-ios-testbox-1.local parallel-ios-testbox-2.local parallel-ios-tes
         # TODO: check if it's thread safe
         if nextTest = list_of_tests.pop
           begin
+            puts "\tTesting #{nextTest}"
             test_run_result = capture(:xcodebuild, "-scheme UnitTest test-without-building -destination \"platform=iOS Simulator,name=iPhone 7\" -only-testing:#{nextTest}")
             tests_results << { name: nextTest, success: true, output: test_run_result }
           rescue Exception => e
