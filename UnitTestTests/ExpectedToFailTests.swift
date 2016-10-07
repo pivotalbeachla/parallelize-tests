@@ -5,8 +5,8 @@ class ExpectedToFailTests: XCTestCase {
     func testTrue() {
         XCTAssertFalse(true)
     }
-
-    func testFalse() {
-        XCTAssertTrue(false)
-    }
+//
+//    func testFalse() {
+//        XCTAssertTrue(false)
+//    }
 }
