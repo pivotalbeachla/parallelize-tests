@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'prettyprint'
 gem 'rake'
-gem 'simctl'
-gem 'cocoapods'
+gem 'sshkit'
+gem 'xcodeproj'
+gem 'concurrent-ruby-ext'

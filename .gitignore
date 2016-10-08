@@ -1,3 +1,4 @@
+*.log
 failing_error.data
 test_results.data
 .DS_Store
