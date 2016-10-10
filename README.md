@@ -1,6 +1,12 @@
 # Parallelizing iOS tests on virtualized OSX
 
-This is a proof of concept script to divide a time consuming iOS test suite on multiple virtual machines. A quick (~2/3minutes) suite will not benefit from this strategy.
+**This is a proof of concept script** to divide a time consuming iOS test suite on multiple virtual machines. A quick (~2/3minutes) suite will not benefit from this strategy.
+
+## How this works?
+
+Xcode8 has a xcodebuild option called `--only-test` that allows to run parts of a build so we search the Xcode project test file list and split them across virtual machines--legally--running OSX.
+
+**We don't allow to distribute test functions across virtual machines.**
 
 ---
 
@@ -59,3 +65,7 @@ Each run will create a new timestamped file in the script's directory ie. `ios-p
 ## Gotcha
 
 We saw occasional test fails related to xcodebuild telling us the simulator "is installing or uninstalling, and cannot be launched". When we catch that you will see a orange R on the screen and we retry that test.
+
+## Credit
+
+Worked at during Pivotal Labs research time by Enrico Teotti (@agenteo) and Tim Kersey (@tkersey)
