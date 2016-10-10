@@ -9,6 +9,7 @@ GEM
       tzinfo (~> 1.1)
     claide (0.9.1)
     colored (1.2)
+    colorize (0.8.1)
     concurrent-ruby (1.0.2)
     concurrent-ruby-ext (1.0.2)
       concurrent-ruby (~> 1.0.2)
@@ -37,6 +38,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  colorize
   concurrent-ruby-ext
   prettyprint
   rake
