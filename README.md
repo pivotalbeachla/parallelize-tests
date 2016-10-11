@@ -64,6 +64,8 @@ Each run will create a new timestamped file in the script's directory ie. `ios-p
 
 ## Gotcha
 
+ssh connection to the VmWare virtualmachines via their domain name takes 5/6 seconds--that's because it's attempting to connect to their IPV6 address. To avoid that we added: `AddressFamily inet` inside `~/.ssh/config`.
+
 We saw occasional test fails related to xcodebuild telling us the simulator "is installing or uninstalling, and cannot be launched". When we catch that you will see a orange R on the screen and we retry that test.
 
 ## Credit
